@@ -5,11 +5,11 @@
   text-decoration: none;
 }
 
-/* div{
+div{
   border-color: red;
   border-width: 1px;
   border-style: solid;
-} */
+}
 
 .layer1 {
   background-color: #1F2937;
@@ -21,6 +21,10 @@
   justify-content: flex-start;
   font-size: 5vh;
   margin-bottom: 20px;
+}
+
+#linkButton{
+
 }
 
 #links {

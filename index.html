@@ -203,22 +203,13 @@ const signUp = document.getElementById("infoButton");
 let coll = document.getElementsByClassName("links");
 let i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+
 
 
 signUp.onclick = function(){
   alert("Hello! I am an alert box!!");
-};
+  location.href='mailto:xyz@abc.com?subject=Me&body=Hello!' 
+}
 
 </script>
 </html>
