@@ -25,26 +25,27 @@
         <div class="logobox">
           <div class="logo"> Header Logo</div>
         </div>
-        <div class="links">
-          <a class="hype"> header link one</a>
-          <a class="hype"> header link two</a>
+        <div id="links">
+                  
           <a class="hype"> header link three</a>
-        </div>
+          <a class="hype"> header link two</a>
+          <a class="hype"> header link one</a>
+      
+
+      </div>
 
       </div>
       <div class="info">
         <div class="infoLeft">
-          <div class="infoWordsTitle">This website is awesome</div>
+          <h3 class="infoWordsTitle">This website is awesome</div>
           <div class="infoWords">This website has some subtext that goes here under the main title. It's a smaller font
             and the color is lower contrast</div>
             <div class="infoButtonSmall">
-          <button class="infoButton">Sign up</button>
+          <button id="infoButton">Sign up</button>
         </div>
         </div>
         <div class="infoImg">
-          <div class="img">
-            <p class="text">place holder for image</p>
-          </div>
+            <img class="img" src="Image1.jpg" alt="alternatetext">
         </div>
       </div>
     </div>
@@ -56,39 +57,39 @@
       <div class="cardsBox">
        <a href="https://mattclarke873.github.io/projects/DateOlympics/"><div class="cards">
           <div class="cardsImg"></div>
-          <div class="cardText">
-            <p>Date Olympics</p>
+          <div>
+            <p class="cardText">Date <br> Olympics</p>
           </div>
         </div>
       </a> 
        <a href="https://mattclarke873.github.io/projects/Landing-Page/"> <div class="cards">
           <div class="cardsImg"></div>
-          <div class="cardText">
-            <p>Landing-Page</p>
+          <div >
+            <p class="cardText">Landing Page</p>
           </div>
         </div>
       </a>
       <a href="https://mattclarke873.github.io/projects/odin-recipes/"> 
         <div class="cards">
           <div class="cardsImg"></div>
-          <div class="cardText">
-            <p>Odin Recipes</p>
+          <div>
+            <p class="cardText">Odin Recipes</p>
           </div>
         </div>
         </a>
         <a href="https://mattclarke873.github.io/projects/youtube/">
         <div class="cards">
           <div class="cardsImg"></div>
-          <div class="cardText">
-            <p>YouTube</p>
+          <div>
+            <p class="cardText">YouTube</p>
           </div>
         </div>
         </a>
   <a href="https://mattclarke873.github.io/projects/superHeroAPI/">
   <div class="cards">
     <div class="cardsImg"></div>
-    <div class="cardText">
-      <p>Super Hero API</p>
+    <div>
+      <p class="cardText">Super Hero <br> API</p>
     </div>
   </div>
 </div>
@@ -105,31 +106,31 @@
   <div class="cardsBox">
    <a href="https://mattclarke873.github.io/java/rock-paper-scissors/"><div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Rock Paper Scissors</p>
+      <div >
+        <p class="cardText">Rock Paper <br> Scissors</p>
       </div>
     </div>
   </a> 
    <a href="https://mattclarke873.github.io/java/java%20Tips%20Calculator/"> <div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Tips Calculator</p>
+      <div>
+        <p class="cardText">Tips <br> Calculator</p>
       </div>
     </div>
   </a>
   <a href="https://mattclarke873.github.io/java/API-Dog/"> 
     <div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Dog API</p>
+      <div>
+        <p class="cardText">Dog API</p>
       </div>
     </div>
     </a>
     <a href="https://mattclarke873.github.io/java/.Java%20Color%20Box">
     <div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Color Box</p>
+      <div>
+        <p class="cardText">Color Box</p>
       </div>
     </div>
     </a>
@@ -146,31 +147,31 @@
   <div class="cardsBox">
    <a href="https://mattclarke873.github.io/projects/DateOlympics/"><div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Date Olympics</p>
+      <div>
+        <p class="cardText">Date Olympics</p>
       </div>
     </div>
   </a> 
    <a href="https://mattclarke873.github.io/projects/Landing-Page/"> <div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Landing-Page</p>
+      <div >
+        <p class="cardText">Landing-Page</p>
       </div>
     </div>
   </a>
   <a href="https://mattclarke873.github.io/projects/odin-recipes/"> 
     <div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>Odin Recipes</p>
+      <div >
+        <p class="cardText">Odin Recipes</p>
       </div>
     </div>
     </a>
     <a href="https://mattclarke873.github.io/projects/youtube/">
     <div class="cards">
       <div class="cardsImg"></div>
-      <div class="cardText">
-        <p>YouTube</p>
+      <div >
+        <p class="cardText">YouTube</p>
       </div>
     </div>
     </a>
@@ -197,4 +198,27 @@
 
 </body>
 
+<script>
+const signUp = document.getElementById("infoButton");  
+let coll = document.getElementsByClassName("links");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+signUp.onclick = function(){
+  alert("Hello! I am an alert box!!");
+};
+
+</script>
 </html>
