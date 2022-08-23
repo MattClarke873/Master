@@ -5,12 +5,15 @@
   text-decoration: none;
 }
 
+/* div{
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+} */
 
 .layer1 {
   background-color: #1F2937;
 }
-
-
 
 .logo {
   color: #F9FAF8;
@@ -20,18 +23,32 @@
   margin-bottom: 20px;
 }
 
-.links {
+#links {
+  height: 100px;
   display: flex;
   justify-content: left;
-  align-items: flex-start;
   text-align: center;
+  padding: 0;
+  border: 0;
+  background-color: #1F2937;
 }
+
 
 .hype {
   margin: 5px 0px 0px 0px;
   font-size: 20px;
   color: #E5E7EB;
   transition: opacity 0.15s;
+}
+
+.hype:nth-child(1){
+  align-self: flex-end;
+}
+.hype:nth-child(2){
+  align-self: center;
+}
+.hype:nth-child(3){
+  align-self: flex-start;
 }
 
 .hype:hover{
@@ -65,7 +82,7 @@ justify-content: center;
 align-content: center;
 
 }
-.infoButton {
+#infoButton {
   margin: 20px 0 20px 0;
   background-color: #3882F6;
   color: #E5E7EB;
@@ -79,12 +96,12 @@ align-content: center;
 }
 
 
-.infoButton:hover {
+#infoButton:hover {
   opacity: 0.7;
   transition: color 0.15s, background-color 0.15s;
 }
 
-.infoButton:active {
+#infoButton:active {
   opacity: 1;
   background-color: white;
   color: #3882F6;
@@ -112,17 +129,16 @@ align-content: center;
 
 .title {
 text-align: center;
-margin-bottom: 20px;
+margin:20px 0 20px 0;
+
 }
 
 .scroll{
   width: 414px;
-  height: 160px;
+  height: 150px;
   white-space: nowrap;
-  scroll-snap-type: x mandatory;
   overflow-x: scroll;
-
-
+  
 }
 ::-webkit-scrollbar {
   display: none;
@@ -130,7 +146,7 @@ margin-bottom: 20px;
 .cardsBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   scroll-snap-align: start;
 }
@@ -138,49 +154,42 @@ margin-bottom: 20px;
 
 .layer2 .cardsBox {
   width: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;  
 }
 
 .layer3 .cardsBox {
   width: 620px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-
 }
 
 .layer4 .cardsBox {
   width: 600px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 
 .cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
 }
 
 .cardsImg {
   height: 100px;
   width: 100px;
   border: 5px solid #3882F6;
+
+  align-self: center;
   
 }
 
 .cardText {
-  display: inline-block;
-  text-align: center;
   color: #818285;
-  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+  flex-wrap: nowrap;
+  height: 40px;
+
+
 }
 
 
@@ -253,7 +262,6 @@ margin-bottom: 20px;
 }
 
 .signupbutton {
-  
   font-size: 10px;
   background-color: #1f293700;
   border: 2px solid white;
