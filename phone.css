@@ -5,11 +5,11 @@
   text-decoration: none;
 }
 
-div{
+/* div{
   border-color: red;
   border-width: 1px;
   border-style: solid;
-}
+} */
 
 .layer1 {
   background-color: #1F2937;
@@ -27,15 +27,111 @@ div{
 
 }
 
-#links {
-  height: 100px;
+/*Hamburger menu CSS*/
+.menu-btn-container{
   display: flex;
-  justify-content: left;
-  text-align: center;
-  padding: 0;
-  border: 0;
-  background-color: #1F2937;
+  justify-content:center;
+  align-items: center;
+  width:60px;
+  height:60px; 
+  cursor: pointer; 
+  transition: all .5s ease-in-out;
+  z-index: 1;
 }
+.menu-btn{
+  width:40px;
+  height:5px;
+  background: white;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn::before,
+.menu-btn::after{
+  content:'';
+  position: absolute;
+  width: 40px;
+  height:5px;
+  background: white;
+  border-radius:5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn::before{
+  transform: translateY(-13px);
+}
+.menu-btn::after{
+  transform: translateY(13px);
+}
+.menu-btn-container.open .menu-btn{
+  background: transparent;
+}
+.menu-btn-container.open .menu-btn::before{
+  transform: rotate(45deg) ;
+}
+.menu-btn-container.open .menu-btn::after{
+  transform: rotate(-45deg);
+}
+
+/*Styling for the menu list when closed */
+.menu-list{
+  
+  position: absolute;
+  opacity: 0;
+  width: inherit;
+  transform: translateY(-30px);
+}
+/*Styling for the menu list when open */
+.menu-list.open{
+   width: 414px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1F2937;
+  transition: all 300ms ease-in;
+  transform: translateY(0);
+  padding-bottom: 10px;
+}
+.menu-list.open  a{
+  color: white;
+  width: 95%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px;
+
+}
+.menu-list.open  a:hover{
+  background-color: rgba(0,0,0, .3);
+}
+/*Styling for the dummy content*/
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  gap: 20px;
+  padding: 15px 0px;
+}
+.content-one, .content-three{
+  width: 60%;
+  height: 170px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+.content-two{
+  width: 100%;
+  height: 100px;
+  background-color: darkgray;
+}
+
+
+
+
+
+
 
 
 .hype {
@@ -296,3 +392,5 @@ margin:20px 0 20px 0;
   color: white;
   font-size: 20px;
 }
+
+
