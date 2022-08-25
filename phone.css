@@ -238,7 +238,13 @@ body {
 }
 
 .layer2 {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, 
+rgba(255,255,255,0.05) 0%,
+rgba(255,255,255,0.1) 25%, 
+rgba(255,255,255,0.2) 50%, 
+rgba(255,255,255,0.1) 75%,
+rgba(255,255,255,0.05) 100%);
 }
 
 .layer3 .cardsBox {
@@ -257,7 +263,13 @@ body {
 }
 
 .layer3 {
-  background-color: rgba(229, 231, 235, 0.2);
+  background-color: rgba(229, 231, 235);
+  background: linear-gradient(0deg, 
+  rgba(229, 231, 235,0.05) 0%,
+  rgba(229, 231, 235,0.1) 25%,
+  rgba(229, 231, 235,0.2) 50%, 
+  rgba(229, 231, 235,0.1) 75%, 
+  rgba(229, 231, 235,0.05) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,14 +291,21 @@ body {
 }
 
 .layer4 {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, 
+  rgba(255,255,255,0.05) 0%,
+  rgba(255,255,255,0.1) 25%, 
+  rgba(255,255,255,0.2) 50%, 
+  rgba(255,255,255,0.1) 75%,
+  rgba(255,255,255,0.05) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .layer5 {
-  background-color: rgb(31, 41, 55, 0.2);
+  background: rgb(17,54,105);
+background: linear-gradient(0deg, rgba(17,54,105,0.8534007352941176) 0%, rgba(17,54,105,1) 50%, rgba(17,54,105,0.8505996148459384) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
