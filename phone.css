@@ -229,7 +229,7 @@ body {
 .layer2 .cardsImg {
   height: 100px;
   width: 100px;
-  margin: 0 0 -25px 17px;
+  margin: 0 0 -25px 20px;
   text-indent: -9999px;
   background: url("project.svg");
   background-size: 85%;
@@ -248,7 +248,7 @@ body {
 .layer3 .cardsImg {
   height: 100px;
   width: 100px;
-  margin-left: 17px;
+  margin-left: 20px;
   text-indent: -9999px;
   background: url("javascript-1.svg");
   background-size: 85%;
@@ -270,7 +270,7 @@ body {
 .layer4 .cardsImg {
   height: 100px;
   width: 100px;
-  margin-left: 17px;
+  margin-left: 20px;
   text-indent: -9999px;
   background: url("html-1.svg");
   background-size: 85%;
