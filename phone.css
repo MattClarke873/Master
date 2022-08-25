@@ -26,6 +26,7 @@ body {
   margin-bottom: 20px;
 }
 
+
 /*Hamburger menu CSS*/
 .menu-btn-container {
   display: flex;
@@ -84,7 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(17, 54, 105, 0.899);
+  background-color: rgba(17, 54, 105, 0.943);
   transition: all 300ms ease-in;
   transform: translateY(0);
   padding-bottom: 10px;
@@ -124,13 +125,20 @@ body {
   height: 100px;
   background-color: darkgray;
 }
+.hype{
+  pointer-events: none;
+  cursor: default;
+}
 
-.hype {
+.hype.open {
   margin: 5px 0px 0px 0px;
   font-size: 20px;
   color: #e5e7eb;
   transition: opacity 0.15s;
 }
+
+
+
 
 .hype:hover {
   opacity: 0.8;
@@ -248,7 +256,7 @@ body {
 .layer3 .cardsImg {
   height: 100px;
   width: 100px;
-  margin-left: 22px;
+  margin-left: 20px;
   text-indent: -9999px;
   background: url("javascript-1.svg");
   background-size: 85%;
@@ -270,7 +278,7 @@ body {
 .layer4 .cardsImg {
   height: 100px;
   width: 100px;
-  margin-left: 25px;
+  margin-left: 20px;
   text-indent: -9999px;
   background: url("html-1.svg");
   background-size: 85%;

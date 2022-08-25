@@ -30,9 +30,9 @@
           <div class="menu-btn"></div>
         </div> 
       <div class="menu-list">
-        <a class="hype" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ.">Link One</a>
-        <a class="hype" href="https://www.youtube.com/watch?v=Ly-obcDiqMo.">Link Two</a>
-        <a class="hype" href="https://www.youtube.com/watch?v=0EqSXDwTq6U.">Link Three</a>
+        <a  class="hype" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ.">Link One</a>
+        <a  class="hype" href="https://www.youtube.com/watch?v=Ly-obcDiqMo.">Link Two</a>
+        <a  class="hype" href="https://www.youtube.com/watch?v=0EqSXDwTq6U.">Link Three</a>
       </div>
       </div>
       <div class="info">
@@ -207,15 +207,21 @@ const hype = document.querySelector('.hype');
 let menuOpen = false;
 
 menuBtn.addEventListener('click', ()=>{
-  
   menuBtn.classList.toggle('open');
   menuList.classList.toggle('open');
+  
+
   if(!menuOpen){
+    hype.classList.add('open');
     menuBtn.classList.add('open');
     menuOpen=true;  
+    
   } else{
+    hype.classList.remove('open');
+
     menuBtn.classList.remove('open');
     menuOpen=false;
+  
   }; 
 });
 
