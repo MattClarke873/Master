@@ -24,50 +24,45 @@
     <div class="layer1">
       <div class="head">
         <div class="logobox">
-          <div class="logo"> Header Logo</div>
+          <h1 class="logo"> Matt Clarke</h1>
         </div>
-
         <div class="menu-btn-container">
           <div class="menu-btn"></div>
-        </div>
-           
+        </div> 
       <div class="menu-list">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ.">Link One</a>
-        <a href="https://www.youtube.com/watch?v=Ly-obcDiqMo.">Link Two</a>
-        <a href="https://www.youtube.com/watch?v=0EqSXDwTq6U.">Link Three</a>
+        <a class="hype" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ.">Link One</a>
+        <a class="hype" href="https://www.youtube.com/watch?v=Ly-obcDiqMo.">Link Two</a>
+        <a class="hype" href="https://www.youtube.com/watch?v=0EqSXDwTq6U.">Link Three</a>
       </div>
-      
-
       </div>
       <div class="info">
         <div class="infoLeft">
-          <h3 class="infoWordsTitle">This website is awesome</div>
-          <div class="infoWords">This website has some subtext that goes here under the main title. It's a smaller font
-            and the color is lower contrast</div>
+          <h3 class="infoWordsTitle">This my website</div>
+          <div class="infoWords">This is a website to show off the different projects I have created and steps along the way learning HTML, CSS and JavaScript. <br> <br>Frontend is stage one, hopefully moving on to backend
+          </div>
             <div class="infoButtonSmall">
           <button id="infoButton">Sign up</button>
         </div>
         </div>
       </div> 
-        <div class="infoImg">
-            <!-- <img class="img" src="Image1.jpg" alt="alternatetext"> -->
-        </div>
-      </div>
-    </div>
+      
+      
     <div class="layer2">
       <div class="title">
         <h1>Projects</h1>
       </div>
       <div class="scroll">
       <div class="cardsBox">
-       <a href="https://mattclarke873.github.io/projects/DateOlympics/"><div class="cards">
+       <a href="https://mattclarke873.github.io/projects/DateOlympics/">
+        <div class="cards">
           <div class="cardsImg"></div>
           <div>
             <p class="cardText">Date <br> Olympics</p>
           </div>
         </div>
       </a> 
-       <a href="https://mattclarke873.github.io/projects/Landing-Page/"> <div class="cards">
+       <a href="https://mattclarke873.github.io/projects/Landing-Page/"> 
+        <div class="cards">
           <div class="cardsImg"></div>
           <div >
             <p class="cardText">Landing Page</p>
@@ -97,10 +92,11 @@
       <p class="cardText">Super Hero <br> API</p>
     </div>
   </div>
-</div>
-</a>
+  </a>
 </div>
 
+</div>
+</div>
 
 
 <div class="layer3">
@@ -187,20 +183,13 @@
 </div>
 
 <div>
-<div>
-<div>
-        <!-- <div class="signupboxright">
-          <button class="signupbutton">Sign Up</button>
-        </div> -->
-      </div>
-    </div>
     <div class="layer5">
-      <div class="copy">
+      <div class="copyRight">
         <p>Copyright &#169; The Odin Project 2021</p>
       </div>
     </div>
   </div>
-
+  </div>
 </body>
 
 <script>
@@ -214,18 +203,20 @@ signUp.onclick = function(){
 
 const menuBtn = document.querySelector('.menu-btn-container');
 const menuList = document.querySelector('.menu-list');
+const hype = document.querySelector('.hype');
 let menuOpen = false;
 
 menuBtn.addEventListener('click', ()=>{
+  
   menuBtn.classList.toggle('open');
   menuList.classList.toggle('open');
-/*   if(!menuOpen){
+  if(!menuOpen){
     menuBtn.classList.add('open');
-    menuOpen=true;
+    menuOpen=true;  
   } else{
     menuBtn.classList.remove('open');
     menuOpen=false;
-  }; */
+  }; 
 });
 
 
