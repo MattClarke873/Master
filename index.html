@@ -206,22 +206,21 @@ const menuList = document.querySelector('.menu-list');
 const hype = document.querySelector('.hype');
 let menuOpen = false;
 
+
+
 menuBtn.addEventListener('click', ()=>{
+ 
   menuBtn.classList.toggle('open');
   menuList.classList.toggle('open');
   
 
   if(!menuOpen){
-    hype.classList.add('open');
     menuBtn.classList.add('open');
     menuOpen=true;  
     
   } else{
-    hype.classList.remove('open');
-
     menuBtn.classList.remove('open');
     menuOpen=false;
-  
   }; 
 });
 

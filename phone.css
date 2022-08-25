@@ -125,20 +125,13 @@ body {
   height: 100px;
   background-color: darkgray;
 }
-.hype{
-  pointer-events: none;
-  cursor: default;
-}
 
-.hype.open {
+.hype {
   margin: 5px 0px 0px 0px;
   font-size: 20px;
   color: #e5e7eb;
   transition: opacity 0.15s;
 }
-
-
-
 
 .hype:hover {
   opacity: 0.8;
