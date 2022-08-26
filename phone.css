@@ -73,6 +73,7 @@ body {
 
 /*Styling for the menu list when closed */
 .menu-list {
+  display: none;
   position: absolute;
   opacity: 0;
   width: inherit;
@@ -126,12 +127,15 @@ body {
   background-color: darkgray;
 }
 
-.hype {
+
+
+.hype{
   margin: 5px 0px 0px 0px;
   font-size: 20px;
   color: #e5e7eb;
   transition: opacity 0.15s;
 }
+
 
 .hype:hover {
   opacity: 0.8;
