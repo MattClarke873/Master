@@ -51,7 +51,7 @@
       <div class="title">
         <h1>Projects</h1>
       </div>
-      <div class="scroll">
+      <div id="scroll" class="scroll1">
       <div class="cardsBox">
        <a href="https://mattclarke873.github.io/projects/DateOlympics/">
         <div class="cards">
@@ -103,7 +103,7 @@
   <div class="title">
     <h1>JavaScript</h1>
   </div>
-  <div class="scroll">
+  <div id="scroll" class="scroll2">
   <div class="cardsBox">
    <a href="https://mattclarke873.github.io/java/rock-paper-scissors/"><div class="cards">
       <div class="cardsImg"><div ></div></div>
@@ -144,7 +144,7 @@
   <div class="title">
     <h1>HTML</h1>
   </div>
-  <div class="scroll">
+  <div id="scroll" class="scroll3">
   <div class="cardsBox">
    <a href="https://mattclarke873.github.io/projects/DateOlympics/"><div class="cards">
       <div class="cardsImg"></div>
@@ -204,6 +204,7 @@ signUp.onclick = function(){
 const menuBtn = document.querySelector('.menu-btn-container');
 const menuList = document.querySelector('.menu-list');
 const hype = document.querySelector('.hype');
+
 let menuOpen = false;
 
 
@@ -213,21 +214,34 @@ menuBtn.addEventListener('click', ()=>{
   menuBtn.classList.toggle('open');
   menuList.classList.toggle('open');
  
-  
-
   if(!menuOpen){
     menuBtn.classList.add('open');
-   
-    
     menuOpen=true;  
     
   } else{
-    menuBtn.classList.remove('open');
-   
-    
+    menuBtn.classList.remove('open');    
     menuOpen=false;
   }; 
 });
+
+window.addEventListener('load', () => {
+      let scrollElement = document.querySelector('.scroll1');
+      scrollElement.scrollLeft =  (scrollElement.scrollWidth - 
+      scrollElement.clientWidth ) / 2;
+    });
+
+    window.addEventListener('load', () => {
+      let scrollElement = document.querySelector('.scroll2');
+      scrollElement.scrollLeft =  (scrollElement.scrollWidth - 
+      scrollElement.clientWidth ) / 2;
+    });
+
+    window.addEventListener('load', () => {
+      let scrollElement = document.querySelector('.scroll3');
+      scrollElement.scrollLeft =  (scrollElement.scrollWidth - 
+      scrollElement.clientWidth ) / 2;
+    });
+
 
 
 </script>

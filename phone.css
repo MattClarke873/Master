@@ -193,7 +193,19 @@ body {
   margin: 20px 0 20px 0;
 }
 
-.scroll {
+.scroll1 {
+  width: 414px;
+  height: 110px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.scroll2 {
+  width: 414px;
+  height: 150px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.scroll3 {
   width: 414px;
   height: 150px;
   white-space: nowrap;
@@ -208,7 +220,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  scroll-snap-align: start;
 }
 
 .cards {
@@ -244,16 +255,22 @@ body {
 .layer2 {
   background: rgb(255,255,255);
 background: linear-gradient(0deg, 
-rgba(255,255,255,0.05) 0%,
-rgba(255,255,255,0.1) 25%, 
+rgba(255,255,255,0.0) 0%,
+rgba(255,255,255,0.05) 20%,
+rgba(255,255,255,0.1) 30%,
+rgba(255,255,255,0.15) 40%,
 rgba(255,255,255,0.2) 50%, 
-rgba(255,255,255,0.1) 75%,
-rgba(255,255,255,0.05) 100%);
+rgba(255,255,255,0.15) 60%, 
+rgba(255,255,255,0.1) 70%,
+rgba(255,255,255,0.05) 80%,
+rgba(255,255,255,0.05) 90%,
+rgba(255,255,255,0.0) 100%);
 }
 
 .layer3 .cardsBox {
-  width: 620px;
+  width: 616px;
   display: flex;
+  scroll-snap-align: center center;
 }
 
 .layer3 .cardsImg {
@@ -269,19 +286,25 @@ rgba(255,255,255,0.05) 100%);
 .layer3 {
   background-color: rgba(229, 231, 235);
   background: linear-gradient(0deg, 
-  rgba(229, 231, 235,0.05) 0%,
-  rgba(229, 231, 235,0.1) 25%,
-  rgba(229, 231, 235,0.2) 50%, 
-  rgba(229, 231, 235,0.1) 75%, 
-  rgba(229, 231, 235,0.05) 100%);
+  rgba(255,255,255,0.0) 0%,
+  rgba(255,255,255,0.05) 20%,
+  rgba(255,255,255,0.1) 30%,
+  rgba(255,255,255,0.15) 40%,
+  rgba(255,255,255,0.2) 50%, 
+  rgba(255,255,255,0.15) 60%, 
+  rgba(255,255,255,0.1) 70%,
+  rgba(255,255,255,0.05) 80%,
+  rgba(255,255,255,0.05) 90%,
+  rgba(255,255,255,0.0) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .layer4 .cardsBox {
-  width: 600px;
+  width: 595px;
   display: flex;
+  scroll-snap-align: end;
 }
 
 .layer4 .cardsImg {
@@ -297,11 +320,16 @@ rgba(255,255,255,0.05) 100%);
 .layer4 {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, 
-  rgba(255,255,255,0.05) 0%,
-  rgba(255,255,255,0.1) 25%, 
+  rgba(255,255,255,0.0) 0%,
+  rgba(255,255,255,0.05) 20%,
+  rgba(255,255,255,0.1) 30%,
+  rgba(255,255,255,0.15) 40%,
   rgba(255,255,255,0.2) 50%, 
-  rgba(255,255,255,0.1) 75%,
-  rgba(255,255,255,0.05) 100%);
+  rgba(255,255,255,0.15) 60%, 
+  rgba(255,255,255,0.1) 70%,
+  rgba(255,255,255,0.05) 80%,
+  rgba(255,255,255,0.05) 90%,
+  rgba(255,255,255,0.0) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -309,7 +337,7 @@ rgba(255,255,255,0.05) 100%);
 
 .layer5 {
   background: rgb(17,54,105);
-background: linear-gradient(0deg, rgba(17,54,105,0.8534007352941176) 0%, rgba(17,54,105,1) 50%, rgba(17,54,105,0.8505996148459384) 100%);
+background: linear-gradient(0deg, rgba(17,54,105,0.4) 0%, rgba(17,54,105,0.2) 50%, rgba(17,54,105,0.05) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
