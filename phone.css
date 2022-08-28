@@ -88,7 +88,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(17, 54, 105, 0.943);
+  background: rgb(1,90,106);
+background: linear-gradient(180deg,
+rgba(1,90,106,1) 0%, 
+rgba(0,103,122,1) 100%);
   transition: all 300ms ease-in;
   transform: translateY(0);
   padding-bottom: 10px;
@@ -197,19 +200,19 @@
 
 .scroll1 {
   width: 414px;
-  height: 115px;
+ 
   white-space: nowrap;
   overflow-x: scroll;
 }
 .scroll2 {
   width: 414px;
-  height: 150px;
+  
   white-space: nowrap;
   overflow-x: scroll;
 }
 .scroll3 {
   width: 414px;
-  height: 150px;
+ 
   white-space: nowrap;
   overflow-x: scroll;
 }
@@ -245,12 +248,12 @@
 }
 
 .layer2 .cardsImg {
-  height: 100px;
+  height: 105px;
   width: 100px;
-  margin: 0 0 -25px 20px;
+  margin: 0 0 0 0;
   text-indent: -9999px;
   background: url("project.svg");
-  background-size: 85%;
+  background-size: 100px;
   background-repeat: no-repeat;
 }
 
@@ -276,12 +279,12 @@ rgba(255,255,255,0.0) 100%);
 }
 
 .layer3 .cardsImg {
-  height: 100px;
-  width: 100px;
-  margin-left: 20px;
+  height: 105px;
+  width: 86px;
+  margin: 0 0 0 0;
   text-indent: -9999px;
-  background: url("javascript-1.svg");
-  background-size: 85%;
+  background: url(javascript-1.svg);
+  background-size: 85px;
   background-repeat: no-repeat;
 }
 
@@ -310,12 +313,12 @@ rgba(255,255,255,0.0) 100%);
 }
 
 .layer4 .cardsImg {
-  height: 100px;
-  width: 100px;
-  margin-left: 20px;
+  height: 105px;
+  width: 86px;
+  margin: 0 0 0 0;
   text-indent: -9999px;
-  background: url("html-1.svg");
-  background-size: 85%;
+  background: url(html-1.svg);
+  background-size: 85px;
   background-repeat: no-repeat;
 }
 
@@ -339,30 +342,49 @@ rgba(255,255,255,0.0) 100%);
 
 .layer5 {
   background: rgb(17,54,105);
-background: linear-gradient(0deg, rgba(17,54,105,0.4) 0%, rgba(17,54,105,0.2) 50%, rgba(17,54,105,0.05) 100%);
-  display: flex;
+background: linear-gradient(0deg, 
+rgba(17,54,105,0.4) 0%, 
+rgba(17,54,105,0.2) 50%, 
+rgba(17,54,105,0.05) 100%);
+margin: 20px 0 0 0;display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   flex-direction: column;
 }
 
-.socialBox {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  font-size: 10px;
-}
+.copyRight{
+  display: block;
+    justify-content:space-between;
+    align-items:center; 
+    gap: 10px; 
+  } 
 
-.socials{
-  width: 30px;
-  height: 30px;
-  filter: invert(100%);
-}
 
-.socials:hover{
-  width: 35px;
-  height: 35px;
-  filter: invert(70%);
-
-}
+  .socialContainer{
+    display: block;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center; 
+    gap: 5px;
+    }
+    
+    .socialBox{
+     width: 35px;
+     height: 35px;
+    }
+    
+    .socials{
+      width: 30px;
+      height: 30px;
+      filter: invert(100%);
+      
+    }
+    
+    .socials:hover{
+      width: 32px;
+      height: 32px;
+      filter: invert(70%);
+    }

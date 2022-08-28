@@ -5,6 +5,12 @@
   text-decoration: none;
 }
 
+/* div {
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+}  */
+
 body {
   background-image: url("LargeBackground.jpg");
   background-repeat: no-repeat;
@@ -144,7 +150,7 @@ body {
   rgba(255,255,255,0.1) 70%,
   rgba(255,255,255,0.05) 80%,
   rgba(255,255,255,0.01) 90%,
-  rgba(255,255,255,0.01) 100%);
+  rgba(255,255,255,0.001) 100%);
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -153,12 +159,12 @@ body {
 }
 
 .layer2 .cardsImg {
-  height: 170px;
-  width: 190px;
-  margin:20px 0 0 20px;
+  height: 195px;
+  width: 170px;
+  margin:20px 0 0 0;
   text-indent: -9999px;
   background: url("project.svg");
-  background-size: 85%;
+  background-size: 167px;
   background-repeat: no-repeat;
 }
 
@@ -223,12 +229,12 @@ body {
 
 
 .layer3 .cardsImg {
-  height: 170px;
+  height: 195px;
   width: 170px;
-  margin:40px 0 0 20px;
+  margin:40px 0 0 0;
   text-indent: -9999px;
   background: url("javascript-1.svg");
-  background-size: 85%;
+  background-size: 167px;
   background-repeat: no-repeat;
 }
 .layer3 .cardsImg:hover {
@@ -254,12 +260,12 @@ body {
 }
 
 .layer4 .cardsImg {
-    height: 170px;
+    height: 195px;
     width: 170px;
-    margin:40px 0 0 20px;
+    margin:40px 0 0 0;
     text-indent: -9999px;
     background: url("html-1.svg");
-    background-size: 85%;
+    background-size: 167px;
     background-repeat: no-repeat;
   }
   .layer4 .cardsImg:hover {
@@ -274,13 +280,11 @@ body {
   color: whitesmoke;
   background: rgb(255,255,255);
   background: linear-gradient(0deg, 
- 
   rgba(255,255,255,0.2) 0%, 
   rgba(255,255,255,0.15) 20%,
   rgba(255,255,255,0.1) 50%,
   rgba(255,255,255,0.05) 75%,
-  rgba(255,255,255,0.0) 100%);
-  
+  rgba(255,255,255,0.0) 100%); 
   height: 100px;
   display: flex;
   justify-content:center;
@@ -290,12 +294,26 @@ body {
 }
 
 .copyRight{
-  display: flex;
+display: block;
   justify-content:space-between;
   align-items:center; 
-  gap: 10px;
+  gap: 10px; 
+} 
+
+.socialContainer{
+display: block;
+height: 55px;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items:center; 
+gap: 10px;
 }
 
+.socialBox{
+ width: 60px;
+ height: 60px;
+}
 
 .socials{
   width: 50px;
