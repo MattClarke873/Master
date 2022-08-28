@@ -12,10 +12,12 @@
   border-style: solid;
 } */
 
-body {
-  background-image: url("background.jpg");
+.container {
+  background-image: url("LargeBackground.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+
 }
 
 .logo {
