@@ -224,7 +224,7 @@ rgba(0,103,122,1) 100%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 53px;
 }
 
 .cards {
@@ -387,4 +387,10 @@ margin: 20px 0 0 0;display: flex;
       width: 32px;
       height: 32px;
       filter: invert(70%);
+    }
+
+    .socials:active{
+      width: 32px;
+      height: 32px;
+      filter: invert(0%);
     }

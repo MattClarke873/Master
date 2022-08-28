@@ -172,6 +172,9 @@ body {
   opacity: 0.8;
 }
 
+.layer2 .cardsImg:active {
+  filter: invert(100%);
+}
 
 .title {
   color: white;
@@ -184,7 +187,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 70px;
 }
 
 
@@ -240,6 +243,9 @@ body {
 .layer3 .cardsImg:hover {
   opacity: 0.8;
 }
+.layer3 .cardsImg:active {
+  filter: invert(100%);
+}
 .layer4 {
   background: rgb(255,255,255);
   background: linear-gradient(0deg, 
@@ -272,9 +278,9 @@ body {
     opacity: 0.8;
   }
 
-
-
-
+  .layer4 .cardsImg:active {
+    filter: invert(100%);
+  }
 
 .layer5 {
   color: whitesmoke;
