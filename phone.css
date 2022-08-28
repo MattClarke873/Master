@@ -270,7 +270,7 @@ rgba(255,255,255,0.0) 100%);
 }
 
 .layer3 .cardsBox {
-  width: 616px;
+  width: 605px;
   display: flex;
   scroll-snap-align: center center;
 }
@@ -304,7 +304,7 @@ rgba(255,255,255,0.0) 100%);
 }
 
 .layer4 .cardsBox {
-  width: 595px;
+  width: 605px;
   display: flex;
   scroll-snap-align: end;
 }
