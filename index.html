@@ -13,8 +13,8 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="phone.css" media="(max-width:414px)" />
-    <link rel="stylesheet" href="comp.css" media="(min-width:415px)" />
+    <link rel="stylesheet" href="./styles/phone.css" media="(max-width:414px)" />
+    <link rel="stylesheet" href="./styles/comp.css" media="(min-width:415px)" />
    
 </head>
 
@@ -194,23 +194,23 @@
 <div class="layer5">
      <div class="socialContainer">
         <a  class="socialBox" href=""> 
-        <img class="socials" src="icons8-bebo-100.png">
+        <img class="socials" src="./icons/icons8-bebo-100.png">
         </a>
 
         <a  class="socialBox" href=""> 
-        <img class="socials" src="icons8-facebook-circled-100.png">
+        <img class="socials" src="./icons/icons8-facebook-circled-100.png">
         </a>
 
         <a  class="socialBox" href="https://github.com/MattClarke873"> 
-        <img class="socials" src="icons8-github-100.png">
+        <img class="socials" src="./icons/icons8-github-100.png">
         </a>
 
         <a  class="socialBox" href=""> 
-        <img class="socials" src="icons8-myspace-100.png">
+        <img class="socials" src="./icons/icons8-myspace-100.png">
         </a>
 
         <a  class="socialBox" href=""> 
-        <img class="socials" src="icons8-youtube-squared-100.png">
+        <img class="socials" src="./icons/icons8-youtube-squared-100.png">
         </a>
       </div>
         
@@ -228,59 +228,7 @@
   </div>
 </body>
 
-<script>
-const signUp = document.getElementById("infoButton");  
-
-signUp.onclick = function(){
-  alert("Hello! I am an alert box!!");
-  location.href='mailto:xyz@abc.com?subject=Me&body=Hello!' 
-}
-
-
-const menuBtn = document.querySelector('.menu-btn-container');
-const menuList = document.querySelector('.menu-list');
-const hype = document.querySelector('.hype');
-
-let menuOpen = false;
-
-
-
-menuBtn.addEventListener('click', ()=>{
- 
-  menuBtn.classList.toggle('open');
-  menuList.classList.toggle('open');
- 
-  if(!menuOpen){
-    menuBtn.classList.add('open');
-    menuOpen=true;  
-    
-  } else{
-    menuBtn.classList.remove('open');    
-    menuOpen=false;
-  }; 
-});
-
-window.addEventListener('load', () => {
-      let scrollElement = document.querySelector('.scroll1');
-      scrollElement.scrollLeft =  (scrollElement.scrollWidth - 
-      scrollElement.clientWidth ) / 2;
-    });
-
-    window.addEventListener('load', () => {
-      let scrollElement = document.querySelector('.scroll2');
-      scrollElement.scrollLeft =  (scrollElement.scrollWidth - 
-      scrollElement.clientWidth ) / 2;
-    });
-
-    window.addEventListener('load', () => {
-      let scrollElement = document.querySelector('.scroll3');
-      scrollElement.scrollLeft =  (scrollElement.scrollWidth - 
-      scrollElement.clientWidth ) / 2;
-    });
-
-
-
-</script>
+<script src="./java/script.js"></script>
 </html>
 
 

@@ -13,7 +13,7 @@
 } */
 
 .container {
-  background-image: url("LargeBackground.jpg");
+  background-image: url("../images/LargeBackground.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -252,7 +252,7 @@ rgba(0,103,122,1) 100%);
   width: 100px;
   margin: 0 0 0 0;
   text-indent: -9999px;
-  background: url("project.svg");
+  background: url("../icons/project.svg");
   background-size: 100px;
   background-repeat: no-repeat;
 }
@@ -283,7 +283,7 @@ rgba(255,255,255,0.0) 100%);
   width: 86px;
   margin: 0 0 0 0;
   text-indent: -9999px;
-  background: url(javascript-1.svg);
+  background: url(../icons/javascript-1.svg);
   background-size: 85px;
   background-repeat: no-repeat;
 }
@@ -317,7 +317,7 @@ rgba(255,255,255,0.0) 100%);
   width: 86px;
   margin: 0 0 0 0;
   text-indent: -9999px;
-  background: url(html-1.svg);
+  background: url(../icons/html-1.svg);
   background-size: 85px;
   background-repeat: no-repeat;
 }
@@ -349,7 +349,7 @@ rgba(17,54,105,0.05) 100%);
 margin: 20px 0 0 0;display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: whitesmoke;
   flex-direction: column;
 }
 
