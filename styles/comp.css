@@ -307,8 +307,18 @@ rgba(0,103,122,1) 100%);
 }
 
 .layer2 .cardsBox {
-  width: 913px;
+  width: 2000px;
+ 
   display: flex;
+}
+
+@media screen and (max-width: 1380px) {
+  .layer2 .cardsBox {
+    width: 2000px;
+   padding-left: 200px;
+    display: flex;
+  }
+
 }
 
 .layer2 .cardsImg {
@@ -337,7 +347,8 @@ rgba(255,255,255,0.0) 100%);
 }
 
 .layer3 .cardsBox {
-  width: 600px;
+  width: 1400px;
+ 
   display: flex;
   scroll-snap-align: center center;
 }
